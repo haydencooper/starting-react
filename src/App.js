@@ -152,7 +152,7 @@ function App() {
   const [pokemon, pokemonSet] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("http://localhost:3000/starting-react/pokemon.json")
+    fetch("./starting-react/pokemon.json")
       .then((resp) => resp.json())
       .then((data) => pokemonSet(data));
   });
